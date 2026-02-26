@@ -1086,7 +1086,7 @@ footer {
     }
 
     .container-contact {
-        @include DisplayFlex(row !important, center !important, end !important);
+        @include DisplayFlex(column !important, center !important, center !important);
 
     }
 

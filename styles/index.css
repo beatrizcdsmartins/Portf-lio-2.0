@@ -25,7 +25,6 @@
   color: #fff;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -309,12 +308,6 @@ header .switch {
 }
 .about-me .container-about-me {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  margin-top: 80px;
-  gap: 50px;
 }
 .about-me .container-about-me .zig-zag {
   position: absolute;
@@ -322,11 +315,21 @@ header .switch {
   bottom: -200px;
   z-index: -1;
 }
+.about-me .container-about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin-top: 80px;
+}
 .about-me .container-about-me .image-about-me {
   width: min(90%, 600px);
   border-radius: 10px;
   border: 2px solid var(--white);
   margin-left: -10%;
+}
+.about-me .container-about-me {
+  gap: 50px;
 }
 .about-me .container-about-me article {
   position: relative;
@@ -471,7 +474,6 @@ header .switch {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  position: relative;
 }
 .projects .projects-container .wrap-projects #hide-content {
   margin-top: -30px;
@@ -503,6 +505,9 @@ header .switch {
   right: 0;
   margin-right: -20px;
   animation: spin 6s linear infinite;
+}
+.projects .projects-container .wrap-projects {
+  position: relative;
 }
 .projects .projects-container .wrap-projects .container-project {
   display: flex;
@@ -592,10 +597,6 @@ header .switch {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .contact .container-contact .popup {
   display: none;
@@ -664,6 +665,12 @@ header .switch {
   font-size: 20px;
   border-radius: 5px;
   padding-right: 110px;
+}
+.contact .container-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .contact .container-contact .container-title {
   margin-bottom: 20px;
@@ -942,9 +949,9 @@ footer .development {
   }
   .container-contact {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: column !important;
     justify-content: center !important;
-    align-items: end !important;
+    align-items: center !important;
   }
   .social-medias-mobile {
     display: block !important;
